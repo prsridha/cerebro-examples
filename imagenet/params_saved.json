@@ -1,0 +1,17 @@
+{
+    "train": {
+        "metadata_url": "s3://cerebro-imagenet-ca/Metadata/train.csv",
+        "multimedia_url": "s3://cerebro-imagenet-ca/Data/CLS-LOC/train"
+    },
+    "valid": {
+        "metadata_url": "s3://cerebro-imagenet-ca/Metadata/valid.csv",
+        "multimedia_url": "s3://cerebro-imagenet-ca/Data/CLS-LOC/val"
+    },
+    "test": {
+        "metadata_url": "s3://cerebro-imagenet-ca/Metadata/valid.csv",
+        "multimedia_url": "s3://cerebro-imagenet-ca/Data/CLS-LOC/test"
+    },
+    "miscellaneous": [
+        "s3://cerebro-imagenet-ca/Metadata/imagenet_label_mapping.json"
+    ]
+}
