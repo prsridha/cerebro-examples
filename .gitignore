@@ -136,3 +136,5 @@ imagenet/Metadata
 imagenet/DataTree
 imagenet/.DS_Store
 imagenet/*.zip
+
+coco/*.zip
