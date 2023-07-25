@@ -5,9 +5,11 @@ from torch.nn import functional as F
 
 
 class EncoderCNN(nn.Module):
-    def __init__(self, embed_size):
+    def __init__(self):
         """Load the pretrained ResNet-50 and replace top fc layer."""
         super(EncoderCNN, self).__init__()
+
+    def initialize(self, embed_size):
         resnet = models.resnet50(pretrained=True)
         modules = list(resnet.children())[:-1] 
         self.resnet = nn.Sequential(*modules)
@@ -25,9 +27,11 @@ class EncoderCNN(nn.Module):
 
 
 class DecoderRNN(nn.Module):
-    def __init__(self, embed_size, hidden_size, vocab_size, num_layers=1):
+    def __init__(self):
         """Set the hyper-parameters and build the layers."""
         super(DecoderRNN, self).__init__()
+
+    def initialize(self, embed_size, hidden_size, vocab_size, num_layers=1):
         self.embed = nn.Embedding(vocab_size, embed_size)
         self.lstm = nn.LSTM(embed_size, hidden_size, num_layers, batch_first=True)
         self.linear = nn.Linear(hidden_size, vocab_size)
