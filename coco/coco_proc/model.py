@@ -11,7 +11,7 @@ class EncoderCNN(nn.Module):
 
     def initialize(self, embed_size):
         resnet = models.resnet50(pretrained=True)
-        modules = list(resnet.children())[:-1] 
+        modules = list(resnet.children())[:-1]
         self.resnet = nn.Sequential(*modules)
         self.embed = nn.Linear(resnet.fc.in_features, embed_size)
         self.bn = nn.BatchNorm1d(embed_size, momentum=0.01)
@@ -38,7 +38,7 @@ class DecoderRNN(nn.Module):
 
     def forward(self, features, captions):
         """Decode image feature vectors and generates captions."""
-        captions = captions[:,:-1]
+        captions = captions[:, :-1]
         embeddings = self.embed(captions)
         inputs = torch.cat((features.unsqueeze(1), embeddings), 1)
         hiddens, _ = self.lstm(inputs)
@@ -93,5 +93,3 @@ class DecoderRNN(nn.Module):
             ordered = sorted(all_candidates, key=lambda x: x[1], reverse=True)
             idx_sequences = ordered[:beam_width]
         return [idx_seq[0] for idx_seq in idx_sequences]
-
-    
