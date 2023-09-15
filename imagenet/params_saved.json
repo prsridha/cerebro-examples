@@ -8,5 +8,5 @@
     "misc": [
         "s3://cerebro-imagenet-ca/Metadata/imagenet_label_mapping.json"
     ],
-    "etl_dir": "processed"
+    "etl_dir": "s3://cerebro-imagenet-ca/ProcessedData"
 }
