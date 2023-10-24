@@ -2,9 +2,11 @@
     "train_main": "s3://cerebro-imagenet-ca/Metadata/train.csv",
     "val_main": "s3://cerebro-imagenet-ca/Metadata/valid.csv",
     "test_main": "s3://cerebro-imagenet-ca/Metadata/test.csv",
+    "predict_main": "s3://cerebro-imagenet-ca/Metadata/test.csv",
     "train_dir": "s3://cerebro-imagenet-ca/Data/CLS-LOC/train",
     "val_dir": "s3://cerebro-imagenet-ca/Data/CLS-LOC/val",
     "test_dir": "s3://cerebro-imagenet-ca/Data/CLS-LOC/test",
+    "predict_dir": "s3://cerebro-imagenet-ca/Data/CLS-LOC/test",
     "misc": [
         "s3://cerebro-imagenet-ca/Metadata/imagenet_label_mapping.json"
     ],
