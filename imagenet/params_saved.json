@@ -10,5 +10,6 @@
     "misc": [
         "s3://cerebro-imagenet-ca/Metadata/imagenet_label_mapping.json"
     ],
-    "etl_dir": "s3://cerebro-imagenet-ca/ProcessedData"
+    "etl_dir": "s3://cerebro-imagenet-ca/ProcessedData",
+    "models_dir": "s3://cerebro-imagenet-ca/Models"
 }
