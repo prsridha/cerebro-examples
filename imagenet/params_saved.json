@@ -1,17 +1,17 @@
 {
     "train": {
-        "metadata_url": "s3://cerebro-imagenet-ca/Metadata/train.csv",
-        "multimedia_url": "s3://cerebro-imagenet-ca/Data/CLS-LOC/train"
+        "metadata_url": "s3://rapidfire-datasets-dev-us-west-2/imagenet/Metadata/train.csv",
+        "multimedia_url": "s3://rapidfire-datasets-dev-us-west-2/imagenet/Data/train"
     },
     "valid": {
-        "metadata_url": "s3://cerebro-imagenet-ca/Metadata/valid.csv",
-        "multimedia_url": "s3://cerebro-imagenet-ca/Data/CLS-LOC/val"
+        "metadata_url": "s3://rapidfire-datasets-dev-us-west-2/imagenet/Metadata/valid.csv",
+        "multimedia_url": "s3://rapidfire-datasets-dev-us-west-2/imagenet/Data/val"
     },
     "test": {
-        "metadata_url": "s3://cerebro-imagenet-ca/Metadata/test.csv",
-        "multimedia_url": "s3://cerebro-imagenet-ca/Data/CLS-LOC/test"
+        "metadata_url": "s3://rapidfire-datasets-dev-us-west-2/imagenet/Metadata/test.csv",
+        "multimedia_url": "s3://rapidfire-datasets-dev-us-west-2/imagenet/Data/test"
     },
     "miscellaneous": [
-        "s3://cerebro-imagenet-ca/Metadata/imagenet_label_mapping.json"
+        "s3://rapidfire-datasets-dev-us-west-2/imagenet/Metadata/imagenet_label_mapping.json"
     ]
 }
